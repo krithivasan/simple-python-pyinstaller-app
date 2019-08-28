@@ -8,6 +8,7 @@ pipeline {
                     memory 512
                     inheritFrom 'ecs-build-farm'
                     label 'ecs-build-farm'
+                    image 'python:2-alpine'
                 }
             }
             steps {
