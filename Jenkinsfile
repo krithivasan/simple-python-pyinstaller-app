@@ -3,11 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             agent {
-                docker {
-                    image 'python:2-alpine'
-                }
-            }
-            agent {
                 ecs {
                     inheritFrom 'ecs-build-farm'
                     cpu 2048
