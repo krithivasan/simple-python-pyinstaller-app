@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             agent {
                 ecs {
+                    cloud 'ecs-build-farm'
                     inheritFrom 'ecs-build-farm'
                 }
             }
