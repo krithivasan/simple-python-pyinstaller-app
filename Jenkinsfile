@@ -7,6 +7,7 @@ pipeline {
                     cpu 1024
                     memory 512
                     inheritFrom 'ecs-build-farm'
+                    label 'ecs-build-farm'
                 }
             }
             steps {
