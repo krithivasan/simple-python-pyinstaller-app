@@ -5,10 +5,6 @@ pipeline {
             agent {
                 ecs {
                     inheritFrom 'ecs-build-farm'
-                    cpu 2048
-                    memory 4096
-                    logDriver 'fluentd'
-                    logDriverOptions([[name: 'foo', value:'bar'], [name: 'bar', value: 'foo']])
                 }
             }
             steps {
