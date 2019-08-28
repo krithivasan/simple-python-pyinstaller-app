@@ -4,7 +4,8 @@ pipeline {
         stage('Build') {
             agent {
                 ecs {
-                    cloud 'ecs-build-farm'
+                    cpu 1024
+                    memory 512
                     inheritFrom 'ecs-build-farm'
                 }
             }
