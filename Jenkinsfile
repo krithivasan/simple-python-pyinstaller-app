@@ -10,7 +10,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'Declarative pipeline is awesome'
+                sh 'echo $USER'
             }
         }
     }
